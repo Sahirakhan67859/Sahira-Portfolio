@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahira Bibi | Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS ISI FILE MEIN HAI TAAKE KOI MASLA NA HO */
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; color: #333; }
+        .navbar { background: white; border-bottom: 1px solid #eee; }
+        .text-primary { color: #0d6efd !important; }
+        section { padding: 100px 0; min-height: 100vh; display: flex; align-items: center; }
+        
+        /* Hero Section */
+        .hero { background: #f8f9fa; }
+        .profile-img { 
+            width: 350px; height: 350px; object-fit: cover; 
+            border-radius: 50%; border: 10px solid white; 
+            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.2);
+        }
+
+        /* Skills Cards */
+        .skill-card { 
+            background: white; padding: 40px; border-radius: 20px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+            text-align: center; border: 1px solid #eee;
+        }
+        .skill-card:hover { transform: translateY(-10px); border-color: #0d6efd; }
+
+        /* Project Card */
+        .project-card { 
+            background: white; border-radius: 15px; border: none; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08); overflow: hidden;
+        }
+
+        /* Contact Form */
+        .form-control { padding: 12px; border-radius: 8px; background: #f8f9fa; border: 1px solid #eee; }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">Sahira<span class="text-primary">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="text-primary fw-bold mb-3">Welcome to my world</h5>
+                    <h1 class="display-3 fw-bold mb-4">Hi, I'm <span class="text-primary">Sahira Bibi</span></h1>
+                    <p class="lead text-muted mb-5">Web Engineering student creating modern and responsive websites.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Hire Me</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="portfolio_images/Profile1.png" class="profile-img mt-5 mt-md-0 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <h2 class="display-4 fw-bold">About <span class="text-primary">Me</span></h2>
+                </div>
+                <div class="col-md-7">
+                    <p class="lead">I am a passionate Web Engineering student from Pakistan. My goal is to build clean and scalable web applications.</p>
+                    <p class="text-muted">I love turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you'll find me exploring new technologies.</p>
+                    <div class="row mt-4">
+                        <div class="col-4"><h3>10+</h3><p>Projects</p></div>
+                        <div class="col-4"><h3>5+</h3><p>Skills</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">My <span class="text-primary">Skills</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3"><div class="skill-card"><i class="fab fa-html5 fa-3x text-danger mb-3"></i><h4>HTML5</h4></div></div>
+                <div class="col-md-3"><div class="skill-card"><i class="fab fa-css3-alt fa-3x text-primary mb-3"></i><h4>CSS3</h4></div></div>
+                <div class="col-md-3"><div class="skill-card"><i class="fab fa-js fa-3x text-warning mb-3"></i><h4>JavaScript</h4></div></div>
+                <div class="col-md-3"><div class="skill-card"><i class="fas fa-code fa-3x text-info mb-3"></i><h4>jQuery</h4></div></div>
+            </div>
+        </div>
+    </section>
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Featured <span class="text-primary">Projects</span></h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="project-card p-4 shadow-sm border rounded-4">
+                    <h4 class="fw-bold">Resort Landing Page</h4>
+                    <p class="text-muted">A luxury resort website designed with modern UI principles using Tailwind CSS.</p>
+                    <button class="btn btn-outline-primary fw-semibold" data-bs-toggle="modal" data-bs-target="#resortModal">View Project Details</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="project-card p-4 shadow-sm border rounded-4">
+                    <h4 class="fw-bold">Professional Portfolio</h4>
+                    <p class="text-muted">A responsive personal portfolio built with HTML, CSS, Bootstrap, and jQuery interactivity.</p>
+                    <button class="btn btn-outline-primary fw-semibold" data-bs-toggle="modal" data-bs-target="#portfolioModal">View Project Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="resortModal" tabindex="-1" aria-labelledby="resortModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="resortModalLabel">Resort Landing Page</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <img src="portfolio_images/resort_preview.png" class="img-fluid rounded-3 mb-4 shadow-sm" alt="Resort Project Preview" onerror="this.src='https://via.placeholder.com/800x400?text=Resort+Project+Preview'">
+                <p class="text-muted">This project focuses on a luxury guest experience, featuring responsive galleries, booking call-to-actions, and a sleek modern aesthetic. Developed as part of my Web Engineering coursework.</p>
+                <div class="mt-4">
+                    <span class="badge bg-light text-dark border me-2 p-2">HTML5</span>
+                    <span class="badge bg-light text-dark border me-2 p-2">Tailwind CSS</span>
+                    <span class="badge bg-light text-dark border p-2">JavaScript</span>
+                </div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center pb-4">
+                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">View Live Demo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="portfolioModalLabel">Personal Portfolio Website</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <img src="portfolio_images/Profile1.png" class="img-fluid rounded-3 mb-4 shadow-sm" style="max-height: 300px;" alt="Portfolio Preview">
+                <p class="text-muted">A clean, professional single-page application style portfolio. It features smooth scrolling, interactive modals, and a fully responsive layout optimized for all devices.</p>
+                <div class="mt-4">
+                    <span class="badge bg-light text-dark border me-2 p-2">Bootstrap 5</span>
+                    <span class="badge bg-light text-dark border me-2 p-2">jQuery</span>
+                    <span class="badge bg-light text-dark border p-2">Responsive Design</span>
+                </div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center pb-4">
+                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">View Source Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2 class="fw-bold mb-5">Get In <span class="text-primary">Touch</span></h2>
+                    <form id="contactForm">
+                        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                        <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2026 Sahira Bibi | Web Engineering Assignment</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Smooth Scroll Interactivity (jQuery)
+        $(document).ready(function(){
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
